@@ -4,6 +4,15 @@
   position: absolute;
   width: 100%;
   z-index: 1;
+
+}
+a {
+  color: white;
+  font-family: monospace;
+  padding: 0px 70px 0px 70px;
+  font-size: 20px;
+  position: relative;
+
 }
 
 body, html {
@@ -146,4 +155,15 @@ article {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* About */
+
+.about {
+  height: 100%;
+}
+/* Classes */
+
+.classes {
+  height: 100%;
 }
