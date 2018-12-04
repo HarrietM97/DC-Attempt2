@@ -8,7 +8,6 @@
 }
 a {
   color: white;
-  font-family: monospace;
   padding: 0px 70px 0px 70px;
   font-size: 20px;
   position: relative;
@@ -58,9 +57,10 @@ article {
 
 /* Slideshow container */
 .slideshow-container {
-  float: left;
+  float: center;
   position: absolute;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
   size: cover;
   height: 100%;
@@ -166,4 +166,111 @@ article {
 
 .classes {
   height: 100%;
+}
+
+/* Committee grid styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+* @media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* Add the image overlay */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
