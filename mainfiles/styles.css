@@ -48,7 +48,7 @@ article {
   }
   li {
     display: block;
-    padding:5px;
+    padding:10px;
   }
 }
 /* Slideshow styling */
@@ -65,6 +65,7 @@ article {
   size: cover;
   height: 100%;
   z-index: 0;
+
 }
 
 /* Hide the images by default */
