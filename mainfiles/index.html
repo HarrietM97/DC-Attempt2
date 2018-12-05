@@ -3,21 +3,51 @@
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <meta name="viewport" content="width=device-width, intial-scale=1">
+  <meta charset="utf-8">
   <link href="/Users/harrietmcphail/Documents/GitHub/DC-Attempt2/css" rel="stylesheet">
 </head>
 <!-- Front page -->
 <body>
   <div class="landing-page">
   <div class="header">
-  <header>
+
+<!-- Navigation bar -->
+  <!-- <header>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#classes">Classes</a></li>
+      <li><a href="#classes">Classes</a></li> -->
       <!-- <li><a href="#shows">Shows</a></li> -->
-      <li> <a href="contactFAQ.html">Contact & FAQ</a></li>
+      <!-- <li> <a href="contactFAQ.html">Contact & FAQ</a></li> -->
       <!-- Please note, contact and FAQ will be a separate HTML page -->
-    </ul>
-  </header>
+    <!-- </ul> -->
+  <!-- </header> -->
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#classes">Classes</a>
+    <a href="contactFAQ.html">Contact & FAQ</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<div id="logo">
+  <img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.15752-9/47577495_562329924239778_3216621945663520768_n.png?_nc_cat=100&_nc_ht=scontent-lhr3-1.xx&oh=cf64a69d12dfc5fad8aacb293e243ac4&oe=5C6A2EC0"  class="center">
+</div>
+
 </div>
 
 
