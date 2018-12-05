@@ -278,4 +278,33 @@ h1 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+/* Information about classes section */
+
 .Timetable {max-width: 50%}
+
+/* Create two equal columns that floats next to each other */
+
+.column33 {
+float: left;
+width: 50%;
+padding: 10px;
+height: 500px;
+}
+
+.row33:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+  }
+
+  .row2,
+  .row2 > .column {
+      padding: 8px;
+  }
+  
