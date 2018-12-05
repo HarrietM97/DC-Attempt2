@@ -306,5 +306,5 @@ clear: both;
   .row2,
   .row2 > .column {
       padding: 8px;
+      height:30%;
   }
-  
