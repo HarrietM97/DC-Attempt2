@@ -16,6 +16,7 @@ a {
 
 body, html {
     height: 100%;
+    width: 100%;
     background-color: black;
     color: white;
     font: arial;
@@ -25,7 +26,7 @@ body, html {
  .landing-page {
     height: 100%;
 
-  } */
+  }
 h1 {
   font-size: 100px;
 }
@@ -38,10 +39,7 @@ li {
   display: inline;
   padding: 0px 10px 0px 10px;
 }
-article {
-  padding: 20px;
-  margin: 0 auto;
-}
+
 @media (max-width: 500px) {
   h1 {
     font-size: 36px;
@@ -57,8 +55,7 @@ article {
 
 /* Slideshow container */
 .slideshow-container {
-  float: center;
-  position: absolute;
+  position: relative;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
@@ -181,7 +178,7 @@ article {
 
 body {
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 0px;
     font-family: Arial;
 }
 
@@ -278,4 +275,10 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+/* Classes */
+
+.timetable {
+  max-width: 50%;
 }
